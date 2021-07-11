@@ -1,0 +1,30 @@
+﻿@model WebDesignPatternProjet.ViewModels.VehiculeVM
+
+@{
+    ViewBag.Title = "Voir";
+}
+
+<h2>Voir tous les véhicules</h2>
+
+<table class="shadow-lg bg-white">
+    <tr>
+        <th class="bg-blue-100 border text-left px-8 py-4">Type</th>
+        <th class="bg-blue-100 border text-left px-8 py-4">Marque</th>
+        <th class="bg-blue-100 border text-left px-8 py-4">Modèle</th>
+        <th class="bg-blue-100 border text-left px-8 py-4">Nombre de roues</th>
+        <th class="bg-blue-100 border text-left px-8 py-4">Nombre de chevaux</th>
+    </tr>
+    <tbody>
+        @foreach (var v in Model.ListVehicules)
+        {
+            <tr>
+                <td class="border px-8 py-4">@v.type</td>
+                <td class="border px-8 py-4">@v.marque</td>
+                <td class="border px-8 py-4">@v.modele</td>
+                <td class="border px-8 py-4">@v.nombreRoue</td>
+                <td class="border px-8 py-4">@v.nombreChevaux</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

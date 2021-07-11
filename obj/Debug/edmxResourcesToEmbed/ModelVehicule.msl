@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_VehiculesModelStoreContainer" CdmEntityContainer="DB_VehiculesEntities">
+    <EntitySetMapping Name="VEHICULEs">
+      <EntityTypeMapping TypeName="DB_VehiculesModel.VEHICULE">
+        <MappingFragment StoreEntitySet="VEHICULE">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="marque" ColumnName="marque" />
+          <ScalarProperty Name="modele" ColumnName="modele" />
+          <ScalarProperty Name="nombre_roue" ColumnName="nombre_roue" />
+          <ScalarProperty Name="nombre_chevaux" ColumnName="nombre_chevaux" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
